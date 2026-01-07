@@ -169,7 +169,11 @@ body {
     padding: 18px;
     border-radius: 14px;
     cursor: pointer;
-    transition: border 0.3s ease, box-shadow 0.3s ease;
+    transition: border 0.3s ease, 
+                box-shadow 0.3s ease,
+                border-color 0.4s ease;
+    transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .skill-box h3 {
@@ -179,9 +183,10 @@ body {
 
 /* hover (same feel as before) */
 .skill-box:hover {
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     border-color: #38bdf8;
     box-shadow: 0 0 18px rgba(56,189,248,0.35);
+    
 }
 
 /* ANIMATION CORE */
@@ -191,15 +196,15 @@ body {
     opacity: 0;
     transform: translateY(-6px);
     transition:
-        max-height 0.6s ease,
-        opacity 0.4s ease,
-        transform 0.4s ease;
+        max-height 0.25s ease,
+        opacity 0.25s ease,
+        transform 0.25s ease;
 }
 
 .skill-box.active .skill-content {
     max-height: 180px;
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(6px);
     margin-top: 12px;
 }
 
