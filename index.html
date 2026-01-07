@@ -49,14 +49,101 @@
 <section id="skills" class="section">
     <h2>SKILLS</h2>
 
-    <div class="skills-grid">
-        <div>Python (Core & OOP)</div>
-        <div>Pandas & NumPy</div>
-        <div>Matplotlib & Seaborn</div>
-        <div>Data Cleaning & EDA</div>
-        <div>CSV & File Handling</div>
-        <div>Git & GitHub</div>
+<div class="skills-grid">
+
+    <div class="skill-box" onclick="toggleSkill(this)">
+        <h3>Python (Core & OOP)</h3>
+        <div class="skill-content">
+            <p>
+                Python is my primary language. I focus on logic building, Object-Oriented
+                Programming, file handling, and writing clean reusable code for
+                real-world applications.
+            </p>
+        </div>
     </div>
+
+    <div class="skill-box" onclick="toggleSkill(this)">
+        <h3>Pandas & NumPy</h3>
+        <div class="skill-content">
+            <p>
+                I use Pandas and NumPy for data manipulation, aggregation,
+                numerical operations, and working with structured datasets.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill-box" onclick="toggleSkill(this)">
+        <h3>Matplotlib & Seaborn</h3>
+        <div class="skill-content">
+            <p>
+                I create visualizations to identify trends, patterns, and
+                relationships using Matplotlib and Seaborn.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill-box" onclick="toggleSkill(this)">
+        <h3>Data Cleaning & EDA</h3>
+        <div class="skill-content">
+            <p>
+                I perform Exploratory Data Analysis by handling missing values,
+                outliers, and inconsistent data.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill-box" onclick="toggleSkill(this)">
+        <h3>CSV & File Handling</h3>
+        <div class="skill-content">
+            <p>
+                I work with CSV files in Python where data is dynamically stored,
+                updated, and retrieved efficiently.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill-box" onclick="toggleSkill(this)">
+        <h3>SQL (Learning)</h3>
+        <div class="skill-content">
+            <p>
+                Currently learning SQL for querying databases, filtering data,
+                using joins, and understanding relational database concepts.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill-box" onclick="toggleSkill(this)">
+        <h3>Excel (Learning)</h3>
+        <div class="skill-content">
+            <p>
+                Learning Excel for data cleaning, formulas, pivot tables,
+                and basic data analysis.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill-box" onclick="toggleSkill(this)">
+        <h3>Power BI (Learning)</h3>
+        <div class="skill-content">
+            <p>
+                Learning Power BI for creating interactive dashboards,
+                data modeling, and visual storytelling.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill-box" onclick="toggleSkill(this)">
+        <h3>Git & GitHub</h3>
+        <div class="skill-content">
+            <p>
+                Comfortable using Git and GitHub for version control,
+                managing repositories, and hosting live portfolios.
+            </p>
+        </div>
+    </div>
+
+</div>
+
 </section>
 
 <!-- ================= PROJECTS ================= -->
@@ -131,6 +218,22 @@
 <footer class="footer">
     <p>© 2026 Harsh Jesvani | Python & Data Analytics Portfolio</p>
 </footer>
+
+<!-- ================= JAVA SCRIPT ================= -->
+<script>
+function toggleSkill(clickedBox) {
+    const allBoxes = document.querySelectorAll(".skill-box");
+
+    allBoxes.forEach(box => {
+        if (box !== clickedBox) {
+            box.classList.remove("active");
+        }
+    });
+
+    clickedBox.classList.toggle("active");
+}
+</script>
+
 
 </body>
 </html>
